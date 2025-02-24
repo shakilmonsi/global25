@@ -1,0 +1,109 @@
+/* Hero Section */
+.home{
+    overflow: hidden;
+}
+.hero {
+    position: relative;
+}
+
+.banner_img {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+    background-size: cover;  /* Ensure full background coverage */
+    background-position: center center; /* Center image */
+    transition: mask-image 0.3s ease-in-out; /* Smooth transition for mask effect */
+}
+
+/* Hero Caption */
+.hero-caption {
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+    color: white; /* Ensure text stands out */
+    transition: bottom 0.3s ease-in-out;
+}
+
+/* Caption Image */
+.caption-img {
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+/* Hero Caption Text */
+.hero-caption p {
+    max-width: 700px;
+    font-size: 18px;  /* Slightly larger for better readability */
+    margin-bottom: 20px;
+    line-height: 1.6;  /* Improve text readability */
+}
+
+/* Hero Buttons */
+.hero-button {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;  /* Make buttons stack on smaller screens */
+}
+
+.hero-button .btn img {
+    width: 25px;
+    outline: 0;
+    border: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;  /* Slightly rounded edges */
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+.hero-button .btn:hover img {
+    background-color: #f0f0f0;  /* Hover effect */
+}
+
+/* Body Cards */
+.more-cards {
+    padding-left: 6%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero-caption p {
+        font-size: 14px;  /* Decrease font size on smaller screens */
+        padding-left: 4%;
+    }
+    
+    .hero-button .btn img {
+        font-size: 14px;  /* Slightly smaller buttons on small screens */
+    }
+
+    .caption-img {
+        width: 100%;  /* Make caption image responsive */
+    }
+
+    .more-cards {
+        padding-left: 0;  /* Remove padding on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-caption p {
+        font-size: 12px;  /* Further decrease font size on very small screens */
+        line-height: 1.4;
+    }
+
+    .hero-button .btn img {
+        font-size: 12px;  /* Make button text smaller */
+        padding: 6px 15px;  /* Adjust padding on small screens */
+    }
+}
