@@ -1,52 +1,45 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Navber = () => {
-
-
   return (
-   
-
-        <nav className="bg-gray-800 ">
+    <nav className="g-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Logo"
-            />
+            <img className="h-16 w-16 p-1" src="\assists\logo.png" alt="Logo" />
           </div>
 
           {/* Menu Items */}
           <div className="hidden sm:block">
             <div className="flex space-x-4">
-
-
-
-              <Link to="/"
-               
+              <Link
+                to="/"
                 className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Home
               </Link>
-
-              <Link to="/about"
-               
+              <Link
+                to="/about"
                 className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
               </Link>
 
-
-
-
-              <a
-                href="#"
+              <Link
+                to="/blog"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                Projects
-              </a>
+                Blogs
+              </Link>
+
+              <Link
+                to="/contact"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Contact
+              </Link>
+
               <a
                 href="#"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -58,9 +51,7 @@ const Navber = () => {
 
           {/* Profile Section */}
           <div className="flex items-center space-x-4">
-            <button
-              className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white"
-            >
+            <button className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white">
               <span className="sr-only">View notifications</span>
               <svg
                 className="h-6 w-6"
@@ -118,8 +109,7 @@ const Navber = () => {
         </div>
       </div>
     </nav>
+  );
+};
 
-  )
-}
-
-export default Navber
+export default Navber;
