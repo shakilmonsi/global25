@@ -66,6 +66,7 @@ const Login = () => {
                 {signState}
               </button>
 
+              {/* --------------------------check box --------------- */}
               <div className="form-help flex justify-between text-gray-400 text-sm mt-2">
                 <div className="flex items-center">
                   <input type="checkbox" className="mr-1" />

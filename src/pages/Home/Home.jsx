@@ -2,6 +2,7 @@ import "./Home.css";
 import heroBanner from "../../assets/hero_banner.jpg";
 import herotitle from "../../assets/hero_title.png";
 import TitleCards from "./TitleCards/TitleCards";
+import PricingCart from "./PricingCart/PricingCart";
 // import play_icon from "../../assets/play_icon.png";
 // import info_icon from "../../assets/info_icon.png";
 const Home = () => {
@@ -37,16 +38,20 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* ------------------pricing Cart_______________ */}
+      <div className="bg-black ">
+        <PricingCart></PricingCart>
+      </div>
 
       {/* ----------------------title card----------------- */}
 
       <TitleCards></TitleCards>
       {/* ------body homepage----------------title card----------------- */}
       <div className="more-cards bg-black">
-        <TitleCards titlesName={"blockbuster Movies"} />
-        <TitleCards titlesName={"Only on Netflix"} />
-        <TitleCards titlesName={"Upcoming"} />
-        <TitleCards titlesName={"Top Pics for You"} />
+        <TitleCards titlesName={"blockbuster Movies"} category={"top_rated"} />
+        <TitleCards titlesName={"Only on Netflix"} category={"popular"} />
+        <TitleCards titlesName={"Upcoming"} category={"upcoming"} />
+        <TitleCards titlesName={"Top Pics for You"} category={"now_playing"} />
       </div>
     </div>
   );

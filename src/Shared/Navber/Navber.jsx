@@ -4,7 +4,7 @@ import logo from "../.././assets/Netflix_Logo_PMS.png";
 
 const Navber = () => {
   return (
-    <nav className="bg-black ">
+    <nav className="bg-black  overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}

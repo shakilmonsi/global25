@@ -6,6 +6,7 @@ import Contact from "../LeyOut/Contact/Contact";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Home/Login/Login";
 import Sinup from "../pages/Home/Sinup/Sinup";
+import Player from "../pages/Home/Player/Player";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
       {
         path: "/Signup",
         element: <Sinup></Sinup>,
+      },
+      {
+        path: "/player/:id",
+        element: <Player></Player>,
       },
     ],
   },
