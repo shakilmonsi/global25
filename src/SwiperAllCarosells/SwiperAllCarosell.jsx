@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade"; // Smooth fade effect
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
+import "./herosection.css"; // Custom CSS for additional styles
 
 const products = [
   {
@@ -47,17 +48,16 @@ const HeroSection = () => {
             <SwiperSlide key={product.id}>
               <div className="relative flex h-auto min-h-[300px] items-center justify-center overflow-hidden rounded-lg bg-white shadow-md">
                 <div
-                  className="h-[400px] w-full bg-cover bg-center transition-all duration-1000 ease-in-out md:h-[400px] lg:h-[500px]"
+                  className="h-[250px] w-full bg-cover bg-center transition-all duration-1000 ease-in-out sm:h-[350px] md:h-[400px] lg:h-[500px]"
                   style={{ backgroundImage: `url(${product.image})` }}
                 ></div>
 
-                {/* Adjusted content position */}
-                <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2 px-4 sm:px-8 md:px-16 w-[90%] md:w-1/2 lg:left-[34%]">
-                  <p className="text-2xl font-bold text-blue-800 md:text-xl lg:text-2xl -mt-5 sm:text-[18px] md:text-[22px]">
+                <div className="animate-fadeUp absolute top-1/2 left-12 w-[90%] -translate-y-1/2 transform sm:px-6 md:w-1/2 md:px-8 md:pr-6 lg:left-34 lg:px-16">
+                  <p className="text-2xl font-bold text-blue-800 md:text-xl lg:text-2xl">
                     Starting at {product.discountPrice}
                   </p>
 
-                  <h2 className="text-[20px] font-bold text-[#4b5966] md:text-[30px] lg:text-[50px] sm:text-[18px] md:text-[24px]">
+                  <h2 className="text-[20px] leading-snug font-bold text-[#4b5966] sm:text-[24px] md:text-[30px] lg:text-[50px]">
                     {product.title}
                   </h2>
 
