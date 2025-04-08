@@ -3,7 +3,9 @@ import heroBanner from "../../assets/hero_banner.jpg";
 import herotitle from "../../assets/hero_title.png";
 import TitleCards from "./TitleCards/TitleCards";
 import PricingCart from "./PricingCart/PricingCart";
-import { CatagoryAnimation } from "../../CatagoryAnimaion/CatagoryAnimation";
+import Animation from "../../components/Home/Animation/Animation";
+import Faq from "../../components/FAQ/Faq";
+import CtaSection from "../../components/CtaSection/CtaSection";
 // import play_icon from "../../assets/play_icon.png";
 // import info_icon from "../../assets/info_icon.png";
 const Home = () => {
@@ -40,14 +42,20 @@ const Home = () => {
         </div>
       </div>
       {/* ------------------pricing Cart_______________ */}
+
+      <Animation></Animation>
       <div className="bg-black ">
         <PricingCart></PricingCart>
       </div>
-
+      <CtaSection></CtaSection>
       {/* ----------------------title card----------------- */}
 
       <TitleCards></TitleCards>
       {/* ------body homepage----------------title card----------------- */}
+
+      {/* -------------------------FAQ----------------  */}
+
+      <Faq></Faq>
 
       <div className="more-cards bg-black">
         <TitleCards titlesName={"blockbuster Movies"} category={"top_rated"} />

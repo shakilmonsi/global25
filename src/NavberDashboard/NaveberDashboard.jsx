@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion"; // Added motion
 import { GoMail } from "react-icons/go";
 import { HiOutlinePhone } from "react-icons/hi";

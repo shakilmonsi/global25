@@ -65,7 +65,7 @@ const TitleCards = ({ titlesName, category }) => {
   }, [isAutoScroll, category]);
 
   return (
-    <div className="title-cards">
+    <div className="title-cards w-[1400px]">
       <h2 className="text-yellow-600 font-bold text-2xl uppercase pb-8 pt-2">
         {titlesName || "Popular on Netflix"}
       </h2>
