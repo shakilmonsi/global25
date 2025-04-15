@@ -6,6 +6,10 @@ import PricingCart from "./PricingCart/PricingCart";
 import Animation from "../../components/Home/Animation/Animation";
 import Faq from "../../components/FAQ/Faq";
 import CtaSection from "../../components/CtaSection/CtaSection";
+import UserListComponent from "../../UserListComponent";
+import UserProfile from "../../userdetails";
+import EmpoySamary from "../../EmpoySamary";
+import UserInformation from "../../UserInformation";
 // import play_icon from "../../assets/play_icon.png";
 // import info_icon from "../../assets/info_icon.png";
 const Home = () => {
@@ -41,13 +45,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* ------------------pricing Cart_______________ */}
 
+      <UserInformation></UserInformation>
+      {/* ------------------pricing Cart_______________ */}
+      <UserListComponent></UserListComponent>
+      <UserProfile></UserProfile>
       <Animation></Animation>
       <div className="bg-black ">
         <PricingCart></PricingCart>
       </div>
       <CtaSection></CtaSection>
+      <EmpoySamary></EmpoySamary>
       {/* ----------------------title card----------------- */}
 
       <TitleCards></TitleCards>
